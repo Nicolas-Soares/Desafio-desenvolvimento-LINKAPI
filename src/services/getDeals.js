@@ -7,7 +7,7 @@ async function getDealsFromPipedrive() {
                         .filter(i => i.status == 'won')
                         .map(i => {
                             return {
-                                title: i.title,
+                                client: i.person_id.name,
                                 value: i.value,
                                 quant: i.products_count
                             }
