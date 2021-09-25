@@ -6,6 +6,7 @@ const URL = `https://bling.com.br/Api/v2/pedido/json/?apikey=${process.env.BLING
 
 async function insertProductOnBling(req, res) {
     const dataFromPipedrive = await getDealsFromPipedrive()
+    
     dataFromPipedrive.map(async (i) => {
         const xml = `
             <pedido>

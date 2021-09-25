@@ -2,11 +2,11 @@ require("dotenv").config();
 
 const express = require("express");
 const { routes } = require("./routes");
-//IMPORTAR CONEXAO COM O BANCO
+const { connectToDatabase } = require('./database/mongodb')
 
 const app = express();
 
-//CONECTAR AO BANCO
+connectToDatabase()
 
 app.use(express.json());
 app.use(routes);
