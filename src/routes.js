@@ -1,11 +1,11 @@
 const { Router } = require("express")
 
-const { insertProductOnBling } = require('./controllers/insert-order')
-const { insertOrdersOnMongo } = require('./services/insertOnMongo')
+const { insertOrderBling } = require('./controllers/insert-order')
+const { insertOrderMongo } = require('./controllers/mongodb-insert-order')
 
 const routes = Router()
 
-routes.post('/cadastro-produto', insertProductOnBling)
-routes.post('/inserir-por-data', insertOrdersOnMongo)
+routes.post('/cadastro-produto', insertOrderBling)
+routes.post('/inserir-no-mongodb', insertOrderMongo)
 
 module.exports = { routes }

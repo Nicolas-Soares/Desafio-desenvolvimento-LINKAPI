@@ -1,6 +1,6 @@
 const insertOrderOnBling = require('../services/insert-order-service')
 
-async function insertProductOnBling(req, res) {
+async function insertOrderBling(req, res) {
     try {
         const response = await insertOrderOnBling.handle()
 
@@ -12,4 +12,4 @@ async function insertProductOnBling(req, res) {
     }    
 }
 
-module.exports = { insertProductOnBling }
+module.exports = { insertOrderBling }
