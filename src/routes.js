@@ -1,6 +1,6 @@
 const { Router } = require("express")
 
-const { insertProductOnBling } = require('./controllers/insertOrder')
+const { insertProductOnBling } = require('./controllers/insert-order')
 const { insertOrdersOnMongo } = require('./services/insertOnMongo')
 
 const routes = Router()
