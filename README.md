@@ -1,6 +1,6 @@
 # Desafio-desenvolvimento-LINKAPI
  
-###Necessário:
+### Necessário:
 Criar arquivo `.env` no root do projeto com as seguintes variáveis:
 - BLING_API_KEY (chave de API do Bling)
 - PIPEDRIVE_PERSONAL_API_TOKEN (token de API pessoal do Pipedrive)
@@ -9,12 +9,17 @@ Criar arquivo `.env` no root do projeto com as seguintes variáveis:
 
 ---
 
-###Endpoints:
+### Endpoints:
 - /cadastro-pedido-bling
 - /query-mongodb-data
 - /inserir-no-mongodb (requer um BODY em formato JSON com o campo `data`, informando a data dos pedidos no Bling que deseja enviar para o banco de dados MongoDB no formato `YYYY-MM-DD`)
 
 ---
 
-###PIPEDRIVE_COMPANY_DOMAIN
+### PIPEDRIVE_COMPANY_DOMAIN
 Pode ser achado na URL de qualquer página no Pipedrive. Exemplo: https://XXX.pipedrive.com/leads/inbox onde `XXX` é o COMPANY_DOMAIN
+
+---
+
+### Exemplo de uso da rota `/inserir-no-mongodb`
+![Screenshot_1](https://user-images.githubusercontent.com/71686515/134794858-fb872729-724b-46e1-8ea7-5cce449525df.png)
